@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Argentino</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <p>Barcelona, España.</p>
+            <i class="fa-solid fa-phone" style="color: #eed8ae;"></i>
+            <a href="tel:123456789">Tel: 123456789</a>
+        </div>
+        <main>
+            <h1>Restaurante Argentino</h1>
+            <div id="logo">
+                <img width="130px" src="https://staticdelivery.nexusmods.com/mods/2347/images/thumbnails/139/139-1688172101-92260090.png" alt="Logo del restaurante">
+            </div>
+            <nav class="navbar">
+                <a class="menu" href="#menu">Menú</a>
+                <a class="comprar" href="#order-form">Comprar</a>
+            </nav>
+        </main>
+    </header>
+    <section class="container">
+        <div class="big-title">
+            <div class="content">
+                <h1>Gastronomía Argentina</h1>
+                <div class="line"></div>
+                <p>Carnes a la brasa, empanadas, vinos y postres</p>
+            </div>
+        </div>
+    </section>
+    <section id="menu">
+        <h2>Menús</h2>
+        <div class="articulos">
+            <article class="parrilla">
+                <img src="https://images.deliveryhero.io/image/pedidosya/products/4d45c623-b95b-4e87-aa97-f354c484cac4.jpg?quality=90&width=248" alt="Parrillada">
+                <h3>Parrillada</h3>
+                <p>La parrillada incluye una guarnición de papas fritas y es ideal para 2 personas</p>
+                <ul>
+                    <li>Vacío</li>
+                    <li>Entraña</li>
+                    <li>Tira de asado</li>
+                    <li>Chorizo</li>
+                    <li>Morcilla</li>
+                </ul>
+                <div class="price">
+                    <h4>65.50€</h4>
+                </div>
+            </article>
+            <article class="empanadas">
+                <img src="https://www.ecos-online.de/sites/ecos.spotlight-verlag.de/files/2023-03/empanada%20argentinaes.IRZEITPROD_E9LVU.jpg" alt="Empanadas">
+                <h3>Empanadas</h3>
+                <p>Las empanadas pueden ser fritas o al horno</p>
+                <ul>
+                    <li>Carne</li>
+                    <li>Pollo</li>
+                    <li>Jamón y queso</li>
+                    <li>Choclo</li>
+                    <li>Caprese</li>
+                </ul>
+                <div class="price">
+                    <h4>3.00€ c/u</h4>
+                </div>
+            </article>
+            <article class="vinos">
+                <img src="https://lacabanaargentina.es/images/vinos-tintos-espanoles-la-cabana-argentina.jpg" alt="Vinos">
+                <h3>Vinos</h3>
+                <p>Los vinos son importados de Argentina de las bodegas <br>más prestigiosas de Mendoza</p>
+                <ul>
+                    <li>Pulenta</li>
+                    <li>Rutini</li>
+                    <li>Hacienda DL Plata</li>
+                    <li>Chandon</li>
+                </ul>
+                <div class="price">
+                    <h4>70.00€</h4>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section id="order-form">
+        <h2>Realiza tu pedido</h2>
+        <div class="container-pedido">
+            <div class="mas-info">
+                <h3>Solicita mas información</h3>
+                <p>Si tienes cualquier pregunta no dudes en contactarnos y estaremos encantados de <br> ayudarte, ya sea para organizar un evento o si tienes cualquier duda sobre los menús <br> o nuestros espacios.</p>
+            </div>
+            <div class="formulario">
+                <form>
+                    <input type="text" placeholder="Nombre" required />
+                    <br>
+                    <h3>Que desea pedir?, indique la cantidad</h3>
+                    <input type="number" min="0" max="30" placeholder="Parrillada">
+                    <input type="number" min="0" max="30" placeholder="Empanada">
+                    <input type="number" min="0" max="30" placeholder="Vino">
+                    <h4>Quiere aderezos?</h4>
+                    <label>Si <input type="radio" name="aderezos"/></label>
+                    <label>No <input type="radio" name="aderezos"/></label>
+                    <textarea id="pedido-especial" cols="50" rows="4" placeholder="Pedido especial aquí"></textarea>
+                    <br><br>
+                    <input type="submit" value="Enviar pedido" />
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="pie">
+        <div class="creador">
+            <p>Hecho con amor por @alexbrett</p>
+        </div>
+        <div class="socials">
+            <a href="#">
+                <div class="social">
+                    <i class="fa-brands fa-instagram" style="color: rgb(238, 216, 174);"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div class="social">
+                    <i class="fa-brands fa-x-twitter" style="color: rgb(238, 216, 174);"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div class="social">
+                    <i class="fa-brands fa-whatsapp" style="color: rgb(238, 216, 174);"></i>
+                </div>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
