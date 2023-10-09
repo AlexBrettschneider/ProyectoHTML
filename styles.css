@@ -190,7 +190,7 @@ header {
     flex: 1;
     margin: 10px;
     text-align: center;
-    max-width: 530px;
+    max-width: 400px;
     border-radius: 15px;
     box-shadow: 10px 10px 10px 1px rgba(77,13,0,0.6);
 }
@@ -198,7 +198,9 @@ header {
 .container__img {
     width: auto;
     overflow: hidden;
-    padding-top: 20px;
+    padding: 20px 20px 0 20px;
+    border-radius: 15px;
+
 }
 
 .container__img img {
@@ -208,6 +210,8 @@ header {
     height: 20em; 
     object-fit: cover;
     border-radius: 15px;
+    border: 2px solid;
+
 }
 
 .articulos h3 {
@@ -336,7 +340,7 @@ header {
     flex-basis: 55%;
     padding: 20px;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(77, 13, 0, 0.4);
+    box-shadow: 0 0 10px rgba(77, 13, 0, 0.6);
     border-radius: 5px;
     text-align: left;
 }
@@ -352,8 +356,21 @@ textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border-bottom: 1px solid rgb(77, 13, 0);
     border-radius: 3px;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    background: linear-gradient(to bottom, #f2f2f2, #e8e8e8);
+    outline: none;
+    border-bottom: 1px solid rgb(172, 29, 0);
+    
 }
 
 .formulario h3 {
@@ -378,7 +395,7 @@ textarea {
 }
 
 input[type="radio"] {
-    margin-right: 5px;
+    margin: 5px;
 }
 
 input[type="submit"] {
