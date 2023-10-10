@@ -468,11 +468,15 @@ input[type="submit"]:hover {
 
     .header-bottom h1{
         font-size: 1rem;
-        width: 35%;
+        width: 33.33%;
     }
 
     .navbar {
-        width: 30%;
+        width: 33.33%;
+    }
+
+    .logo {
+        width: 33.33%;
     }
 
     .navbar a{
